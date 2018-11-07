@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<curriculum 
+  xsi:noNamespaceSchemaLocation="Nicolas_Andrade.xsd" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <DatosPersonales>
+          <nombre>Nicolas</nombre>
+          <apellidos>Andrade  Murcia</apellidos>
+          <FechaNat>17/05/1997</FechaNat>
+          <LugarNat>Espanya</LugarNat>
+          <nacionalidad>Espanyola</nacionalidad>
+          <dni>26662089G</dni>
+          <foto>mifoto.jpg</foto>
+    </DatosPersonales>
+    
+        <DatosContacto>
+          <TipoVia>Calle</TipoVia>
+          <nombre>Paco Ibañez</nombre>
+          <numero>45</numero>
+          <portal>59</portal>
+          <escalera>1</escalera>
+          <piso>3</piso>
+          <puerta>8</puerta>
+          <cp>46470</cp>
+          <pais>España</pais>
+          <email>andrade16841@outlook.es</email>
+          <TelMovil>610672000</TelMovil>
+          <TelFijo>96544528</TelFijo>
+    </DatosContacto>
+    
+    <DatosContactoAdicionales>
+         <web>www.asdNicolas.es</web>
+          <linkedin>Nicolas AM</linkedin>
+          <facebook>Nicolas Am</facebook>
+          <twitter>nicolas182</twitter>
+    </DatosContactoAdicionales>
+    
+    <Formacion>
+        <estudio>
+          <nombre>Graduado escolar</nombre>
+          <lugar>Valencia</lugar>
+          <FechaInicio>18/05/2004</FechaInicio>
+          <FechaFin>24/06/2008</FechaFin>
+        </estudio> 
+        <estudio>
+          <nombre> Grado medio TSMT</nombre>
+          <lugar>Valencia</lugar>
+          <FechaInicio>18/05/2008</FechaInicio>
+          <FechaFin>24/06/20012</FechaFin>
+        </estudio> 
+        <estudio>
+          <nombre>Grado superior DAW</nombre>
+          <lugar>Valencia</lugar>
+          <FechaInicio>15/05/2012</FechaInicio>
+          <FechaFin>1/06/2014</FechaFin>
+        </estudio> 
+    </Formacion>
+    
+    <Idiomas>
+          <idioma>
+            <nombre>Espanyol</nombre>
+            <NivelOral>Alto</NivelOral>
+            <NivelComprension>Alto</NivelComprension>
+           <NivelEscritura>Alto</NivelEscritura>
+            <materno>Si</materno>
+          </idioma>
+          <idioma>
+            <nombre>ingles</nombre>
+            <NivelOral>Alto</NivelOral>
+            <NivelComprension>Alto</NivelComprension>
+           <NivelEscritura>Medio</NivelEscritura>
+            <materno>No</materno>
+          </idioma>
+          <idioma>
+            <nombre>Aleman</nombre>
+            <NivelOral>Medio</NivelOral>
+            <NivelComprension>Medio</NivelComprension>
+           <NivelEscritura>Medio</NivelEscritura>
+            <materno>No</materno>
+          </idioma>
+    </Idiomas>
+    
+    <EsperienciaLaboral>
+        <experiencia>
+          <empresa>Cofrentes	</empresa>
+          <puesto>Tecnico</puesto>
+          <FechaInicio>15/08/2014</FechaInicio>
+          <FechaFin>1/08/2015</FechaFin>
+          <RealoInventada>Real</RealoInventada>
+        </experiencia>
+        <experiencia>
+          <empresa>Cofrentes	</empresa>
+          <puesto>Jefe supervisor</puesto>
+          <FechaInicio>15/08/2015</FechaInicio>
+          <FechaFin>05/11/2018</FechaFin>
+          <RealoInventada>Real</RealoInventada>
+        </experiencia>
+    </EsperienciaLaboral>
+    
+    <Competencias>
+        <liderzgo>5</liderzgo>
+        <TrabajoEnEquipo>4</TrabajoEnEquipo>
+        <iniciativa>5</iniciativa>
+        <creatividad>4</creatividad>
+        <autonomia>5</autonomia>
+    </Competencias>
+    
+    <DatosAdicionales>
+        <aficiones>Videojuegos</aficiones>
+        <DisponibilidadViaje>Si</DisponibilidadViaje>
+        <VehiculoPropio>Si</VehiculoPropio>
+        <TipoCarnet>B</TipoCarnet>
+    </DatosAdicionales>
+    
+</curriculum>

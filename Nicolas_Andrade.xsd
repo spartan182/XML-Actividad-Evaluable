@@ -1,0 +1,146 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:simpleType name="tipoDni">
+   <xs:restriction  base="xs:string">
+      <xs:pattern value="[0-9]{8}[A-Z]|[a-z]"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="mentiroso">
+   <xs:restriction  base="xs:string">
+       <xs:pattern value="Real|Inventada|real|inventada|REAL|INVENTADA"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="SiNo">
+   <xs:restriction  base="xs:string">
+       <xs:pattern value="Si|No|si|no|SI|NO"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Imagenes">
+   <xs:restriction  base="xs:string">
+       <xs:pattern value="[a-zA-Z0-9] *.jpg"/>
+   </xs:restriction>
+</xs:simpleType>
+
+
+<xs:element name="curriculum">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="DatosPersonales">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="nombre" type="xs:string"/>
+                                                 <xs:element name="apellidos" type="xs:string"/>
+                                                 <xs:element name="FechaNat" type="xs:string"/>
+                                                 <xs:element name="LugarNat" type="xs:string"/>
+                                                 <xs:element name="nacionalidad" type="xs:string"/>
+                                                 <xs:element name="dni" type="tipoDni"/>
+                                                 <xs:element name="foto" type="xs:string"/>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="DatosContacto">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="TipoVia" type="xs:string"/>
+                                                 <xs:element name="nombre" type="xs:string"/>
+                                                 <xs:element name="numero" type="xs:int"/>
+                                                 <xs:element name="portal" type="xs:string"/>
+                                                 <xs:element name="escalera" type="xs:string"/>
+                                                 <xs:element name="piso" type="xs:int"/>
+                                                 <xs:element name="puerta" type="xs:int"/>
+                                                 <xs:element name="cp" type="xs:int"/>
+                                                 <xs:element name="pais" type="xs:string"/>
+                                                 <xs:element name="email" type="xs:string"/>
+                                                 <xs:element name="TelMovil" type="xs:int"/>
+                                                 <xs:element name="TelFijo" type="xs:int"/>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="DatosContactoAdicionales">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="web" type="xs:string"/>
+                                                 <xs:element name="linkedin" type="xs:string"/>
+                                                 <xs:element name="facebook" type="xs:string"/>
+                                                 <xs:element name="twitter" type="xs:string"/>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="Formacion">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="estudio" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="nombre" type="xs:string"/>
+                                                                      <xs:element name="lugar" type="xs:string"/>
+                                                                      <xs:element name="FechaInicio" type="xs:string"/>
+                                                                      <xs:element name="FechaFin" type="xs:string"/>
+                                                                  </xs:sequence>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="Idiomas">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="idioma" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="nombre" type="xs:string"/>
+                                                                      <xs:element name="NivelOral" type="xs:string"/>
+                                                                      <xs:element name="NivelComprension" type="xs:string"/>
+                                                                      <xs:element name="NivelEscritura" type="xs:string"/>
+                                                                      <xs:element name="materno" type="xs:string"/>
+                                                                  </xs:sequence>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="EsperienciaLaboral">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="experiencia" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="empresa" type="xs:string"/>
+                                                                      <xs:element name="puesto" type="xs:string"/>
+                                                                      <xs:element name="FechaInicio" type="xs:string"/>
+                                                                      <xs:element name="FechaFin" type="xs:string"/>
+                                                                      <xs:element name="RealoInventada" type="mentiroso"/>
+                                                                  </xs:sequence>
+                                                           </xs:complexType>
+                                                    </xs:element>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="Competencias">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="liderzgo" type="xs:int"/>
+                                                 <xs:element name="TrabajoEnEquipo" type="xs:int"/>
+                                                 <xs:element name="iniciativa" type="xs:int"/>
+                                                 <xs:element name="creatividad" type="xs:int"/>
+                                                 <xs:element name="autonomia" type="xs:int"/>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                            <xs:element name="DatosAdicionales">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="aficiones" type="xs:string"/>
+                                                 <xs:element name="DisponibilidadViaje" type="xs:string"/>
+                                                 <xs:element name="VehiculoPropio" type="xs:string"/>
+                                                 <xs:element name="TipoCarnet" type="xs:string"/>
+                                             </xs:sequence>
+                                      </xs:complexType>
+                               </xs:element>
+                        </xs:sequence>
+                 </xs:complexType>
+          </xs:element>
+   </xs:schema>
